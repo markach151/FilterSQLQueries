@@ -1,26 +1,3 @@
-<!-----
-
-Yay, no errors, warnings, or alerts!
-
-Conversion time: 0.93 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Sun Oct 01 2023 12:15:46 GMT-0700 (PDT)
-* Source doc: Apply filters to SQL queries
------>
-
-
-
 # Apply filters to SQL queries
 
 
@@ -35,7 +12,7 @@ A potential security threat occurred after business hours (18:00) regarding fail
 
 ![image2](https://github.com/markach151/FilterSQLQueries/assets/84886088/cb229339-b5dd-4f41-802d-b60311589cfa)
 
-The first block of code in the screenshot is my query, and the second part is a portion of the output. To investigate the security threat I needed to query the `log_in_attempts` table and review all failed login attempts that occurred after 18:00. I accomplished this by using a `WHERE` clause with an `AND` operator to filter the results that I needed. The first condition is `login_time > '18:00'`, which filters for login attempts that occurred after 18:00. The second condition is `success = 0`, which filters for failed login attempts. ` `    
+The first block of code in the screenshot is my query, and the second part is a portion of the output. To investigate the security threat I needed to query the `log_in_attempts` table and review all failed login attempts that occurred after 18:00. I accomplished this by using a `WHERE` clause with an `AND` operator to filter the results that I needed. The first condition is `login_time > '18:00'`, which filters for login attempts that occurred after 18:00. The second condition is `success = 0`, which filters for failed login attempts.    
 
 
 ## Retrieve login attempts on specific dates
@@ -53,7 +30,7 @@ There’s been suspicious activity with login attempts, but this activity didn�
 
 ![image6](https://github.com/markach151/FilterSQLQueries/assets/84886088/c9e54be1-a410-4336-a796-1b4cf920baaa)
 
-The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries besides Mexico. First, I started by selecting all data from the  `log_in_attempts` table. I used a `WHERE `clause with `NOT` to filter for countries other than Mexico. I used `LIKE` with `MEX%` as the pattern to match because the dataset represents Mexico as `MEX` and `MEXICO`. The percentage sign (`%`) substitutes for any number of characters when used with `LIKE`.
+The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries besides Mexico. First, I started by selecting all data from the  `log_in_attempts` table. I used a `WHERE` clause with `NOT` to filter for countries other than Mexico. I used `LIKE` with `MEX%` as the pattern to match because the dataset represents Mexico as `MEX` and `MEXICO`. The percentage sign (`%`) substitutes for any number of characters when used with `LIKE`.
 
 
 ## Retrieve employees in Marketing
